@@ -7,6 +7,29 @@
 </head>
 <body>
     <h1>INDEX</h1>
-    <a href="create">Crear</a>
+    <table class="table table-light">
+        <thead class="thead-light">
+            <tr>
+                <th>#</th>
+                <th>Foto</th>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for empleado in empleados %}
+                <tr>
+                    <td>{{empleado[0]}}</td>
+                    <td>{{empleado[1]}}</td>
+                    <td>{{empleado[2]}}</td>
+                    <td>{{empleado[3]}}</td>
+                    <td><a href="/edit/{{empleado[0]}}">Editar</a> || <a href="/destroy/{{empleado[0]}}">Eliminar</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+       
+    <a href="/create">Crear</a> 
 </body>
 </html>

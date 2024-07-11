@@ -6,17 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <form method="post" action="/store">
+    <form method="post" action="/store" enctype="multipart/form-data">
         Nombre:
-        <input type="text" name="txtNombre" id="txtNombre"> <br>
-        Apellido:
-        <input type="text" name="txtApellido" id="txtApellido"><br>
+        <input type="text" name="txtNombre" id="txtNombre"><br>
         Correo:
         <input type="text" name="txtCorreo" id="txtCorreo"><br>
-        Tema:
-        <input type="text" name="txtTema" id="txtTema"><br>
-        Fecha de Alta:
-        <input type="text" name="txtFecha" id="txtFecha"><br><br>
+        Foto:
+        <input type="file" name="txtFoto" id="txtFoto"><br>
         <input type="submit" value="Agregar">
        </form>
 </body>
