@@ -26,7 +26,8 @@
                         <td>{{empleado[0]}}</td>
                         <td>{{empleado[1]}}</td>
                         <td>{{empleado[2]}}</td>
-                        <td>{{empleado[3]}}</td>
+                        <td><img class="img-thumbnail" width=75px src="/uploads/{{empleado[3]}}" alt="Foto"></td>
+                        <!-- <td>{{empleado[3]}}</td> -->
                         <td class="text-center"><a class="btn btn-primary" href="/edit/{{empleado[0]}}">Editar</a> || <a class="btn btn-danger" href="/destroy/{{empleado[0]}}">Eliminar</a></td>
                     </tr>
                 {% endfor %}
